@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "name": "premier-projet-Node",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "rolldown -c -w",
+    "build": "rolldown -c"
+  },
+  "author": "Koma",
+  "license": "MIT",
+  "description": "Le meilleur projet node",
+  "type": "module",
+  "devDependencies": {
+    "@rollup/plugin-run": "^3.1.0",
+    "@types/node": "^26.6.3",
+    "rolldown": "^1.2.11",
+    "typescript": "^7.0.2"
+  }
+}
