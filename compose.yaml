@@ -1,11 +1,13 @@
 services:
   node:
-    image: node:26.7.0-alpine3.24
+    container_name: NodeJs-TP
+    build: .
     user: node
     working_dir: /home/node
-    tty: true
-    stdin_open: true
+    command: sh -c "npm install && npm run dev"
     ports:
-      - 8000:8000
+      - "${PORT}:${PORT}"
+
     volumes:
       - .:/home/node
+      - /home/node/node_modules

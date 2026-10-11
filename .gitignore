@@ -1,5 +1,4 @@
-**./npm
-**./node_modules
+.npm/
 .env
 dist/
 node_modules/

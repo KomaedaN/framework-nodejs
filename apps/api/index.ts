@@ -31,7 +31,7 @@ const server = createServer((request, response) => {
       return controller.health.ping(request, response);
     }
   }
-  const url: URL = new URL(request.url ? "/" : "http://localhost/");
+  const url: URL = new URL(request.url ?? "/", "http://localhost/");
   if (url.pathname === "/api/tasks") {
     if (request.method === "GET") {
       return controller.task.index(request, response);

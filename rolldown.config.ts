@@ -5,7 +5,7 @@ const isDev = process.env["ROLLDOWN_WATCH"] === "true";
 
 export default defineConfig({
   platform: "node",
-  input: "src/index.ts",
+  input: "apps/api/src/test.kernel.ts",
   output: {
     file: "dist/index.js",
   },
