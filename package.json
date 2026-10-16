@@ -4,17 +4,18 @@
   "version": "0.1.0",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "rolldown -c -w",
-    "build": "rolldown -c"
+    "dev": "tsx watch apps/api/src/test.kernel.ts",
+    "build": "rolldown -c",
+    "typecheck": "tsc --noEmit"
   },
   "author": "Koma",
   "license": "MIT",
   "description": "Le meilleur projet node",
   "type": "module",
   "devDependencies": {
-    "@rollup/plugin-run": "^3.1.0",
     "@types/node": "^26.6.3",
     "rolldown": "^1.2.11",
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   }
 }

@@ -15,7 +15,7 @@ export class Kernel {
     this.#config = config;
   }
 
-  public listen() {
+  public async listen() {
     if (this.#server !== undefined) {
       throw new Error(`Kernel déjà démarré`);
     }
